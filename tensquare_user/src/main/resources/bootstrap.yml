@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: user #靠base和dev找到码云上的配置位置
+      profile: dev
+      label: master #主干
+      uri: http://127.0.0.1:12000

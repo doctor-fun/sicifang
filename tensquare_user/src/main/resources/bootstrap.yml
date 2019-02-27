@@ -1,4 +1,4 @@
-spring:
+spring: #以下这些都是指定去配置服务器找配置内容的。user-dev
   cloud:
     config:
       name: user #靠base和dev找到码云上的配置位置

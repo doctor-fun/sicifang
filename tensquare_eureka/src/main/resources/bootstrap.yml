@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      name: eureka #靠base和dev找到码云上的配置位置
+      name: eureka #靠base和dev找到码云上的eureka的服务配置位置
       profile: dev
       label: master #主干
       uri: http://47.110.52.14:12000

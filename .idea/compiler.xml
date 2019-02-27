@@ -25,6 +25,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="EagleEye" target="1.5" />
       <module name="tensquareconfig" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -33,7 +33,7 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>0.4.13</version>
                 <configuration>
                     <imageName>192.168.14.129:5000/${project.artifactId}:${project.version}</imageName>
                     <!--为新生成的镜像的命名是47.110.52.14:5000/....-->

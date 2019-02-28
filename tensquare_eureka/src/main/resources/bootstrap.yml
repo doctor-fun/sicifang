@@ -4,4 +4,4 @@ spring:
       name: eureka #靠base和dev找到码云上的eureka的服务配置位置
       profile: dev
       label: master #主干
-      uri: http://47.110.52.14:12000
+      uri: http://192.168.14.129:12000

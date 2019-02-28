@@ -35,7 +35,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <configuration>
-                    <imageName>47.110.52.14:5000/${project.artifactId}:${project.version}</imageName>
+                    <imageName>192.168.14.129:5000/${project.artifactId}:${project.version}</imageName>
                     <!--为新生成的镜像的命名是47.110.52.14:5000/....-->
                     <baseImage>jdk1.8</baseImage>
                     <!--依赖的镜像为jkd1.8-->
@@ -47,7 +47,7 @@
                             <include>${project.build.finalName}.jar</include>
                         </resource>
                     </resources>
-                    <dockerHost>http://47.110.52.14:2375</dockerHost>
+                    <dockerHost>http://192.168.14.129:2375</dockerHost>
                     <!--主机地址-->
                     <!--&lt;!&ndash;镜像名称&ndash;&gt;
                     <imageName>120.79.93.16:5000/${project.artifactId}:${project.version}</imageName>

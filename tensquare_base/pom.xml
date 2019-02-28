@@ -61,7 +61,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
-                    <imageName>47.110.52.14:5000/${project.artifactId}:${project.version}</imageName>
+                    <imageName>192.168.14.129:5000/${project.artifactId}:${project.version}</imageName>
                     <baseImage>jdk1.8</baseImage>
                     <entryPoint>["java", "-jar","/${project.build.finalName}.jar"]</entryPoint>
                     <resources>
@@ -71,7 +71,7 @@
                             <include>${project.build.finalName}.jar</include>
                         </resource>
                     </resources>
-                    <dockerHost>http://47.110.52.14:2375</dockerHost>
+                    <dockerHost>http://192.168.14.129:2375</dockerHost>
                     <!--&lt;!&ndash;镜像名称&ndash;&gt;
                     <imageName>120.79.93.16:5000/${project.artifactId}:${project.version}</imageName>
                     &lt;!&ndash;依赖jdk1.8镜像，需要在docker中安装名字为：jdk1.8的jdk镜像，不需jdk8跑起来&ndash;&gt;

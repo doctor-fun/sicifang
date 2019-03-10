@@ -30,7 +30,7 @@ public class WebFilter extends ZuulFilter {
     @Override
     public Object run() throws ZuulException {
         System.out.printf("前端过滤器进啦");
-        //得到request上下文
+        //得到request上下文,在本线程的threadlocal上
         RequestContext currentContext= RequestContext.getCurrentContext();
         //得到request域
         HttpServletRequest request= currentContext.getRequest();

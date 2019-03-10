@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * 统一异常处理类
  */
-@ControllerAdvice
+@ControllerAdvice//aop代理控制所有的异常类
 public class BaseExceptionHandler {
 	
     @ExceptionHandler(value = Exception.class)

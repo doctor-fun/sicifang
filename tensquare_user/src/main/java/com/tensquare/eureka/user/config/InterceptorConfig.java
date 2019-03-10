@@ -33,7 +33,7 @@ public class InterceptorConfig extends WebMvcConfigurationSupport {
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(jwtInterceptor)
-                .addPathPatterns("/**")
+                .addPathPatterns("/**")//先设置拦截器的路径，再特别放行/**/login/**的请求
                 .excludePathPatterns("/**/login/**");
     }
 }

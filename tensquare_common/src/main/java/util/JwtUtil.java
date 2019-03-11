@@ -42,6 +42,7 @@ public class JwtUtil {
      * @param subject
      * @return
      */
+    //根据用户id,用户名，用户角色创建令牌
     public String createJWT(String id, String subject, String roles) {
         long nowMillis = System.currentTimeMillis();
         Date now = new Date(nowMillis);
@@ -62,7 +63,7 @@ public class JwtUtil {
      */
     public Claims parseJWT(String jwtStr){
         return  Jwts.parser()
-                .setSigningKey(key)
+                .setSigningKey(key)//解析的时候也要给与盐值
                 .parseClaimsJws(jwtStr)
                 .getBody();
     }

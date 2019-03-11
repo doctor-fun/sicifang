@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 //本类用于调用Base服务
 @FeignClient(value = "tensquare-base",fallback = BaseClientImpl.class)//如果执行失败就进入fallback
 public interface BaseClient {
-    //调用base模块下的controller包下的findbyid，要多价格label
+    //调用base模块下的controller包下的findById，要多加个母label
     @RequestMapping(value = "/label/{labelId}",method= RequestMethod.GET)
     public Result findById(@PathVariable("labelId") String labelId);//这里必须要在PathVariable后面
     // 加个（"labelId"）原来可不加，但服务调用必须加

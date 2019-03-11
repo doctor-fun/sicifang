@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
-//springboot不再有web.xml配置，只能写一个拦截器的类
+//springboot不再有web.xml配置，只能写一个拦截器的配置类
 @Configuration
 public class InterceptorConfig extends WebMvcConfigurationSupport {
     @Autowired

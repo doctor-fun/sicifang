@@ -2,6 +2,7 @@ package com.tensquare.qa.controller;
 import java.util.Map;
 
 import com.tensquare.qa.client.BaseClient;
+import com.tensquare.qa.client.impl.BaseClientImpl;
 import com.tensquare.qa.pojo.Problem;
 import com.tensquare.qa.service.ProblemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +36,7 @@ public class ProblemController {
 	private HttpServletRequest request;
 
 	@Autowired
-	private BaseClient baseClient;
+	private BaseClientImpl baseClient;
 	//这个类调用base模块的服务
 	@RequestMapping(value="/label/{labelId}",method = RequestMethod.GET)
 	public Result findByLabelId(@PathVariable String labelId){
